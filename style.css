@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;1,600&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 :root {
     --Primary-strong-cyan : hsl(171, 66%, 44%);
@@ -32,8 +37,8 @@ body {
 }
 
 .clipboard-ios .download-button button {
-    border-radius: 15px;
-    padding: 0.5rem 2rem 0.5rem 2rem;
+    border-radius: 24px;
+    padding: 0.7rem 2rem 0.7rem 2rem;
     cursor: pointer;
     color: #fff;
     font-weight: 400;
@@ -74,8 +79,8 @@ h1 {
 }
 
 .history .download-button button {
-    border-radius: 15px;
-    padding: 0.5rem 2rem 0.5rem 2rem;
+    border-radius: 24px;
+    padding: 0.7rem 2rem 0.7rem 2rem;
     cursor: pointer;
     color: #fff;
     font-weight: 400;
@@ -128,13 +133,17 @@ footer .social-media {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding-bottom: 3rem;
+        padding-bottom: 4rem;
+        padding-top: 4rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
     }
 
     .middle-content {
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 2rem;
     }
 
     .middle-content img {
@@ -142,8 +151,19 @@ footer .social-media {
         height: auto;
     }
 
+    .supercharge {
+        padding-bottom: 3rem;
+    }
+
     .clipboard-ios .download-button {
         flex-direction: row;
+    }
+
+    .clipboard-ios p {
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+        width: 37%;
+        line-height: 24px;
     }
 
     .bottom-content {
@@ -155,22 +175,33 @@ footer .social-media {
         text-align: center;
     }
 
-    .bottom-content .create-blacklists p{
+    /* .bottom-content .create-blacklists p{
         width: 50%;
     }
 
     .bottom-content .plain-text p{
         width: 70%;
-    }
+    } */
     
 
     footer {
         flex-direction: row;
         gap: 6rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        align-items: flex-start;
+    }
+
+    footer .logo {
+        width: 60px;
+        height: auto;
     }
 
     footer .section-one, footer .section-two, footer .section-three{
         padding-left: 2rem;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
     }
 
     footer .section-three {
@@ -180,7 +211,12 @@ footer .social-media {
     footer .social-media {
         padding-left: 4rem;
         gap: 1.5rem;
+        padding-top: 1.5rem;
     }
+
+    /* .middle-content {
+        padding-left: 2rem;
+    } */
 
     
 }
