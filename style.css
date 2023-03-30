@@ -7,13 +7,13 @@
 }
 
 :root {
-    --Primary-strong-cyan : hsl(171, 66%, 44%);
+    --Primary-strong-cyan: hsl(171, 66%, 44%);
     --Primary-Light-Blue: hsl(233, 100%, 69%);
 
     --Neutral-Dark-Grayish-Blue: hsl(210, 10%, 33%);
     --Neutral-Grayish-Blue: hsl(201, 11%, 66%);
 
-    --grey-background-color : #F0F0F0;
+    --grey-background-color: #F0F0F0;
 }
 
 body {
@@ -21,14 +21,22 @@ body {
     font-family: 'Bai Jamjuree', sans-serif;
     background: url(./images/bg-header-mobile.png);
     height: 100vh;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.history , .track , .quick-search , .icloud , 
-.complete-history , .access-clipboard , .supercharge , .create-blacklists , 
-.plain-text , .sneak-preview , .clipboard-ios {
+.history,
+.track,
+.quick-search,
+.icloud,
+.complete-history,
+.access-clipboard,
+.supercharge,
+.create-blacklists,
+.plain-text,
+.sneak-preview,
+.clipboard-ios {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,22 +51,82 @@ body {
     color: #fff;
     font-weight: 400;
     border-style: none;
-    font-family:'Bai Jamjuree', sans-serif;
-    /* box-shadow: 10px 10px 0px -7px rgba(76,84,93,0.61); */
+    font-family: 'Bai Jamjuree', sans-serif;
 }
 
-.company {
-    display: flex;
-    flex-direction: column;
-    gap: 7rem;
+.clipboard-ios h2,
+.clipboard-ios p {
+    width: 20rem;
 }
 
 .clipboard-ios {
     padding-bottom: 3rem;
 }
 
+.company {
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+    align-items: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    flex-wrap: wrap;
+}
+
 h1 {
     color: var(--Neutral-Dark-Grayish-Blue);
+}
+
+h2 {
+    font-size: 1.975rem;
+    color: var(--Neutral-Dark-Grayish-Blue);
+}
+
+
+h3 {
+    font-size: 18px;
+    color: var(--Neutral-Dark-Grayish-Blue);
+}
+
+p {
+    font-size: 14px;
+    color: var(--Neutral-Grayish-Blue);
+    line-height: 1.6;
+}
+
+.create-blacklists p {
+    width: 79%;
+}
+
+.track p,
+.history p {
+    width: 75%;
+}
+
+.plain-text p {
+    width: 82%;
+}
+
+.sneak-preview p {
+    width: 83%;
+}
+
+.quick-search p {
+    width: 81%;
+}
+
+.icloud p {
+    width: 80%;
+}
+
+.access-clipboard p,
+.complete-history p {
+    width: 78%;
+}
+
+.bottom-content .plain-text {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .history {
@@ -66,16 +134,47 @@ h1 {
     /* width: 100%; */
 }
 
-.container p {
-    color: var(--Neutral-Grayish-Blue);
-    font-size: 14px;
+.three-section {
+    padding-top: 4rem;
 }
 
-.history .download-button ,  .clipboard-ios .download-button {
+.middle-content {
     display: flex;
     flex-direction: column;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.supercharge {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    padding-bottom: 3rem;
+}
+
+.history h1 {
+    padding-top: 2.75rem;
+}
+
+.bottom-content .create-blacklists h3,
+.bottom-content .plain-text h3,
+.bottom-content .sneak-preview h3 {
     padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.track h2,
+.history h1 {
+    padding-bottom: 1rem;
+}
+
+.history .download-button,
+.clipboard-ios .download-button {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
     gap: 0.975rem;
+    width: 85%;
 }
 
 .history .download-button button {
@@ -85,19 +184,43 @@ h1 {
     color: #fff;
     font-weight: 400;
     border-style: none;
-    font-family:'Bai Jamjuree', sans-serif;
-    /* box-shadow: 10px 10px 0px -7px rgba(76,84,93,0.61); */
+    font-family: 'Bai Jamjuree', sans-serif;
 }
 
-.history .download-button .for-ios , .clipboard-ios .download-button .for-ios {
+.history .download-button .for-ios,
+.clipboard-ios .download-button .for-ios {
     background: var(--Primary-strong-cyan);
-    
 }
 
-.history .download-button .for-mac , .clipboard-ios .download-button .for-mac {
+.history .download-button .for-mac,
+.clipboard-ios .download-button .for-mac {
     background: var(--Primary-Light-Blue);
 }
 
+.clipboard-ios p,
+.access-clipboard p,
+.supercharge p,
+.sneak-preview p,
+.plain-text p,
+.create-blacklists p,
+.complete-history p,
+.icloud p,
+.quick-search p,
+.track p,
+.history p {
+    padding-top: 1rem;
+
+}
+
+.access-clipboard {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.icloud {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 
 
 footer {
@@ -108,6 +231,26 @@ footer {
     justify-content: center;
     align-items: center;
     color: var(--Neutral-Dark-Grayish-Blue);
+    text-align: center;
+}
+
+footer p {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+footer img {
+    padding-bottom: 1.5rem;
+    padding-top: 2rem;
+}
+
+footer p:hover {
+    color: var(--Primary-strong-cyan);
+    cursor: pointer;
+}
+
+footer .social-media:hover {
+    cursor: pointer;
 }
 
 footer .social-media {
@@ -115,10 +258,52 @@ footer .social-media {
     gap: 2.2rem;
 }
 
+/* MEDIA QUERY */
+
 @media (min-width: 768px) {
     .history .download-button {
         display: flex;
-        flex-direction:row;
+        flex-direction: row;
+        padding-top: 2rem;
+        justify-content: center;
+    }
+
+    .track p {
+        width: 38%;
+    }
+
+    .quick-search,
+    .icloud,
+    .complete-history {
+        align-items: flex-start;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .quick-search p,
+    .icloud p,
+    .complete-history p {
+        text-align: left;
+        padding-top: 0.75rem;
+    }
+
+    .quick-search p {
+        width: 57%;
+    }
+
+    .icloud p {
+        width: 50%;
+    }
+
+    .complete-history p {
+        width: 65%;
+    }
+
+    .access-clipboard p {
+        width: 38%;
+
     }
 
     body {
@@ -127,6 +312,7 @@ footer .social-media {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        overflow-x: hidden;
     }
 
     .company {
@@ -144,45 +330,61 @@ footer .social-media {
         align-items: center;
         justify-content: center;
         gap: 2rem;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .middle-content img {
         max-width: 100%;
         height: auto;
-    }
-
-    .supercharge {
-        padding-bottom: 3rem;
+        padding-right: 3rem;
     }
 
     .clipboard-ios .download-button {
         flex-direction: row;
+        justify-content: center;
+        padding-top: 2rem;
     }
 
     .clipboard-ios p {
-        padding-top: 1rem;
-        padding-bottom: 1.5rem;
         width: 37%;
         line-height: 24px;
     }
 
     .bottom-content {
         display: flex;
-        gap: 1rem;
+        gap: 1.5rem;
         padding-bottom: 3rem;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
 
-    /* .bottom-content .create-blacklists p{
-        width: 50%;
+    .bottom-content .create-blacklists {
+        width: 24%;
     }
 
-    .bottom-content .plain-text p{
-        width: 70%;
-    } */
-    
+    .bottom-content .plain-text {
+        width: 26%;
+    }
+
+    .bottom-content .sneak-preview {
+        width: 25%;
+    }
+
+    .bottom-content .create-blacklists,
+    .bottom-content .plain-text,
+    .bottom-content .sneak-preview {
+        line-height: 1.6;
+    }
+
+    .bottom-content .create-blacklists h3,
+    .bottom-content .plain-text h3,
+    .bottom-content .sneak-preview h3 {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
 
     footer {
         flex-direction: row;
@@ -190,6 +392,7 @@ footer .social-media {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
         align-items: flex-start;
+        flex-wrap: wrap;
     }
 
     footer .logo {
@@ -197,7 +400,9 @@ footer .social-media {
         height: auto;
     }
 
-    footer .section-one, footer .section-two, footer .section-three{
+    footer .section-one,
+    footer .section-two,
+    footer .section-three {
         padding-left: 2rem;
         gap: 1rem;
         display: flex;
@@ -214,13 +419,10 @@ footer .social-media {
         padding-top: 1.5rem;
     }
 
-    /* .middle-content {
-        padding-left: 2rem;
-    } */
-
-    
 }
 
 @media (min-width: 1200px) {
-
+    .history p {
+        width: 37rem;
+    }
 }
