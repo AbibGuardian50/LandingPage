@@ -331,7 +331,7 @@ footer .social-media {
         justify-content: center;
         gap: 2rem;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
 
     .middle-content img {
@@ -421,8 +421,15 @@ footer .social-media {
 
 }
 
+@media (max-width: 1024px) {
+    .middle-content {
+        flex-wrap: wrap;
+    }
+}
+
 @media (min-width: 1200px) {
     .history p {
         width: 37rem;
     }
 }
+
